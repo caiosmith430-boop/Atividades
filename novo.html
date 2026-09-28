@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background-color: #faf8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+            background-color: #494b4d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        form{
+            background: rgba(255,255,255,0.15);
+            max-width: 400px;
+            margin-left: 10%;
+            margin-top: 1%;
+            border-radius: 8%;
+        }
+
+        h1 {
+            background-color: #000103;
+            color: #ffffff;
+            margin: 0 0 15px 0;
+            padding: 18px 20px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        
+        label, input, select {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        label {
+            color: #f8f7f7;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], select {
+            width: calc(100% - 50px);
+            padding: 10px 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #000705;
+            font-size: 14px;
+            color: #c5c0c0;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #000102;
+            color: #dadada;
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            transition: background-color 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+
+        body{
+  		background-image: url('dbz.png');
+  		background-size: cover;
+  		background-repeat: no repeat;
+  		background-position: center;
+  	}
+    
+
+    </style>
+</head>
+<body>
+
+    <form action="https://sheetdb.io/api/v1/6h8k47zzele4q" method="post">
+        
+        <h1>Formulário de Cadastro</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="data[nome]" id="nome">
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="data[sobrenome]" id="sobrenome">
+
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value="">-- Selecione a opção</option>
+            <option value="MG">MG</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="BA">BA</option>
+        </select>
+
+        <label for="cidade">Cidade</label>
+        <input type="text" name="data[cidade]" id="cidade">
+
+        <label for="ddd">DDD</label>
+        <input type="text" name="data[ddd]" id="ddd">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" name="data[telefone]" id="telefone">
+
+        <input type="submit" name="data[botão]" id="botão" value="CADASTRAR">
+
+    </form>
+
+</body>
+</html>
